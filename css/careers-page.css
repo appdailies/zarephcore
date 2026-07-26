@@ -1,0 +1,110 @@
+.careers-intro {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  padding: 80px 0;
+  align-items: start;
+}
+
+.careers-intro .stat-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.careers-intro .stat-block .stat {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  text-align: left;
+}
+
+.job-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.job-filter {
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.job-filter.active,
+.job-filter:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.job-list {
+  border-top: 1px solid var(--border-soft);
+}
+
+.job-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border-soft);
+  transition: opacity 0.2s ease;
+}
+
+.job-row.hidden {
+  display: none;
+}
+
+.job-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.job-meta {
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+.job-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+  color: var(--core-green-200);
+  background: rgba(29, 158, 117, 0.14);
+  width: fit-content;
+}
+
+.job-row .btn {
+  white-space: nowrap;
+}
+
+.perks-section {
+  padding: 100px 0;
+  background: var(--bg-dark-2);
+  border-top: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+@media (max-width: 860px) {
+  .careers-intro {
+    grid-template-columns: 1fr;
+  }
+  .job-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    text-align: left;
+  }
+  .job-row .btn {
+    margin-top: 8px;
+    width: fit-content;
+  }
+}

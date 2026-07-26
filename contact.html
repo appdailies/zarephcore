@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Zareph Core</title>
+<meta name="description" content="Get in touch with Zareph Core. Our headquarters is in Nairobi, Kenya.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/apps-page.css">
+<link rel="stylesheet" href="css/contact-page.css">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<main>
+  <section class="page-header container">
+    <span class="section-label">Contact us</span>
+    <h1>Let's talk</h1>
+    <p>Whether you're a partner, a journalist, or just curious about what we're building — we'd love to hear from you.</p>
+  </section>
+
+  <section class="container contact-grid">
+    <div>
+      <div id="formSuccess" class="form-success">
+        <span>✓</span>
+        <span>Thanks — your message has been received. We'll be in touch soon.</span>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
+          </div>
+          <div class="form-field">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Wanjiru" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+        </div>
+
+        <div class="form-field">
+          <label for="reason">What's this about</label>
+          <select id="reason" name="reason">
+            <option value="general">General inquiry</option>
+            <option value="press">Press &amp; media</option>
+            <option value="partnership">Partnerships</option>
+            <option value="careers">Careers</option>
+            <option value="support">Product support</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us a bit about what you'd like to discuss..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note">This is a static demo form — no data is sent or stored.</p>
+      </form>
+    </div>
+
+    <div>
+      <div class="contact-info-card">
+        <div class="contact-info-row">
+          <div class="contact-info-icon">◈</div>
+          <div>
+            <h5>Headquarters</h5>
+            <p>Zareph Core Ltd<br>GTC Tower<br>Westlands, Nairobi, Kenya</p>
+          </div>
+        </div>
+        <div class="contact-info-row">
+          <div class="contact-info-icon">✉</div>
+          <div>
+            <h5>General inquiries</h5>
+            <a href="mailto:hello@zarephcore.com">hello@zarephcore.com</a>
+          </div>
+        </div>
+        <div class="contact-info-row">
+          <div class="contact-info-icon">◆</div>
+          <div>
+            <h5>Press</h5>
+            <a href="mailto:press@zarephcore.com">press@zarephcore.com</a>
+          </div>
+        </div>
+        <div class="contact-info-row">
+          <div class="contact-info-icon">☎</div>
+          <div>
+            <h5>Phone</h5>
+            <p>+254 20 123 4567</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-frame">
+        <iframe
+          title="Zareph Core headquarters location in Nairobi"
+          src="https://www.google.com/maps?q=GTC+Tower,Westlands,Nairobi,Kenya&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="offices-section">
+    <div class="container">
+      <span class="section-label">Where we are</span>
+      <h2 class="section-heading">Our offices</h2>
+      <div class="office-grid">
+        <div class="office-card">
+          <span class="office-tag">Headquarters</span>
+          <h4>Nairobi, Kenya</h4>
+          <p>GTC Tower, Westlands. Home to our leadership, product, and engineering teams.</p>
+        </div>
+        <div class="office-card">
+          <span class="office-tag">Engineering hub</span>
+          <h4>Remote — East Africa</h4>
+          <p>A distributed team of engineers working across Kenya, Uganda, and Rwanda.</p>
+        </div>
+        <div class="office-card">
+          <span class="office-tag">Growing</span>
+          <h4>Global — Remote</h4>
+          <p>Team members supporting Zareph Core products across more than 30 countries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/include.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

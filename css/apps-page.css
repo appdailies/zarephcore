@@ -1,0 +1,131 @@
+.page-header {
+  padding: 160px 0 60px;
+  text-align: center;
+}
+
+.page-header .section-label {
+  display: block;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+}
+
+.page-header p {
+  color: var(--text-secondary);
+  font-size: 17px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.app-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  padding: 90px 0;
+  border-top: 1px solid var(--border-soft);
+}
+
+.app-detail:nth-child(even) .app-visual {
+  order: 2;
+}
+
+.app-detail-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.app-detail-tag .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.app-detail h2 {
+  font-size: clamp(26px, 3.6vw, 38px);
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: -0.02em;
+}
+
+.app-detail p.lead {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+
+.app-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.app-detail-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14.5px;
+  color: var(--text-secondary);
+}
+
+.app-detail-list .check {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #04140F;
+  margin-top: 1px;
+}
+
+.app-visual {
+  position: relative;
+  border-radius: var(--radius-lg);
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+}
+
+.app-visual .mock-icon {
+  font-size: 64px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.app-detail.dailies .app-visual { background: linear-gradient(135deg, #4A1B0C, #D85A30); }
+.app-detail.dailies .app-detail-tag .dot { background: #D85A30; }
+.app-detail.dailies .app-detail-list .check { background: #D85A30; }
+
+@media (max-width: 860px) {
+  .app-detail,
+  .app-detail:nth-child(even) .app-visual {
+    grid-template-columns: 1fr;
+    order: 0;
+  }
+  .app-detail {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+}
