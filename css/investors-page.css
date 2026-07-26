@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  padding: 20px 0 90px;
+  padding-top: 20px;
+  padding-bottom: 90px;
 }
 
 .funding-stat {
@@ -78,7 +79,8 @@
 }
 
 .rounds-section {
-  padding: 90px 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .round-row {
@@ -111,7 +113,8 @@
 }
 
 .investor-contact {
-  padding: 90px 0 40px;
+  padding-top: 90px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
